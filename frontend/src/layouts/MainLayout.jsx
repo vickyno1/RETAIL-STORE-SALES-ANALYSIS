@@ -124,10 +124,17 @@ export default function MainLayout() {
             <span style={{ fontSize: '0.85rem', color: '#64748b' }}>
               Today: <strong>{new Date().toLocaleDateString('en-IN', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}</strong>
             </span>
-            <span className="badge badge-success" style={{ gap: '0.35rem' }}>
-              <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#059669', display: 'inline-block' }}></span>
-              Oracle 10g XE Connected
-            </span>
+            {window.location.hostname.includes('netlify.app') || localStorage.getItem('token')?.startsWith('demo-') ? (
+              <span className="badge badge-info" style={{ gap: '0.35rem' }}>
+                <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#0284c7', display: 'inline-block' }}></span>
+                Oracle 10g Cloud Preview
+              </span>
+            ) : (
+              <span className="badge badge-success" style={{ gap: '0.35rem' }}>
+                <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#059669', display: 'inline-block' }}></span>
+                Oracle 10g XE Live Connected
+              </span>
+            )}
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
