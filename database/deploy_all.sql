@@ -33,6 +33,9 @@ PROMPT *** 7. Seeding Initial Data ***
 @database/seed/04_seed_products.sql
 @database/seed/05_seed_transactions.sql
 
+PROMPT *** 8. Synchronizing Sequences Beyond Seeded Primary Keys ***
+@database/schema/04_align_sequences.sql
+
 PROMPT *** Deployment Complete! Checking Table Counts ***
 SELECT 'USERS' AS TBL, COUNT(*) AS CNT FROM USERS
 UNION ALL

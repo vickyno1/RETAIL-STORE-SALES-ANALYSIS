@@ -1,5 +1,5 @@
 PRODUCT_ID,PRODUCT_CODE,PRODUCT_NAME,CATEGORY_NAME,TOTAL_WASTED_QTY,TOTAL_WASTAGE_LOSS,INCIDENTS_COUNT
-16,FRU-001,Banana (Robusta),Fruits,6.2,217.0,3
+16,FRU-001,Banana (Robusta),Fruits,13.7,479.5,8
 1,VEG-001,Tomato (Country/Nattu),Vegetables,4.5,108.0,1
 2,VEG-002,Tomato (Hybrid),Vegetables,3.0,66.0,1
 23,FRU-008,Papaya (Red Lady),Fruits,2.0,56.0,1
